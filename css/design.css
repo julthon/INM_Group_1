@@ -1,0 +1,119 @@
+/* colors from here: https://flatuicolors.com/ */
+
+/* main part */
+
+body {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background-color: #2c3e50;
+	color: #ecf0f1;
+}
+
+/* unvisited link */
+a:link {
+    color: #e74c3c;
+}
+
+a:active {
+    color: white;
+}
+
+p {
+	line-height: 150%;
+}
+
+/* formatting of titlebar */
+
+div#title {
+    top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 100px;
+	line-height: 100px;
+	background-color: black;
+	color: #3498db;
+	font-size: 50px;
+	position: relative;
+	z-index: 100;
+	padding-left: 20px;
+	border-bottom: solid black 5px;
+	text-align: center;
+}
+
+div img {
+	height: 1em;
+}
+
+/* navigation part */
+
+ul.navigation {
+    list-style-type: none;
+	float: left;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+	height: 100%;
+    background-color: #3498db;
+	-webkit-box-shadow: -18px -18px 5px 20px rgba(0,0,0,0.75);
+	-moz-box-shadow: -18px -18px 5px 20px rgba(0,0,0,0.75);
+	box-shadow: -18px -18px 5px 20px rgba(0,0,0,0.75);
+}
+
+li.navigation a:link, a:visited {
+	text-align: center;
+    display: block;
+    color: #000;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+li.navigation a:target {
+    background-color: #fff;
+}
+
+li.navigation a:hover {
+    background-color: #2980b9;
+    color: black;
+}
+
+/* formatting of content */
+
+section h1 {
+	font-size: 36px;
+	border-bottom: 2px solid #2980b9;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	display:inline-block;
+}
+
+section h2 {
+	font-size: 24px;
+}
+
+section {
+	margin-left: 20%;
+	margin-right: 20%;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+	font-size: 28px;
+}
+
+/* formatting of footer */
+
+footer {
+	background-color: #34495e;
+    bottom: 0px;
+    left: 0px; 
+	right: 0px;
+	padding: 20px;
+}
+
+aside {
+    background-color: #3498db;
+    padding: 1em;
+	width: 20%;
+	float: right;
+	-webkit-box-shadow: 18px -18px 5px 20px rgba(0,0,0,0.75);
+	-moz-box-shadow: 18px -18px 5px 20px rgba(0,0,0,0.75);
+	box-shadow: 18px -18px 5px 20px rgba(0,0,0,0.75);
+}
