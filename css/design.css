@@ -8,13 +8,12 @@ body {
 	color: #ecf0f1;
 }
 
-/* unvisited link */
 a:link {
-    color: #e74c3c;
+	color: #e74c3c;
 }
 
 a:active {
-    color: white;
+	color: white;
 }
 
 p {
@@ -24,7 +23,7 @@ p {
 /* formatting of titlebar */
 
 div#title {
-    top: 0px;
+	top: 0px;
 	left: 0px;
 	right: 0px;
 	height: 100px;
@@ -32,47 +31,48 @@ div#title {
 	background-color: black;
 	color: #3498db;
 	font-size: 50px;
-	position: relative;
+	position: fixed;
 	z-index: 100;
 	padding-left: 20px;
 	border-bottom: solid black 5px;
 	text-align: center;
 }
 
-div img {
+div#title img {
 	height: 1em;
 }
 
 /* navigation part */
 
 ul.navigation {
-    list-style-type: none;
+	position: fixed;
+	list-style-type: none;
 	float: left;
-    margin: 0;
-    padding: 0;
-    width: 20%;
+	padding-top: 100px;
+	top: 1em;
+	width: 20%;
 	height: 100%;
-    background-color: #3498db;
-	-webkit-box-shadow: -18px -18px 5px 20px rgba(0,0,0,0.75);
-	-moz-box-shadow: -18px -18px 5px 20px rgba(0,0,0,0.75);
-	box-shadow: -18px -18px 5px 20px rgba(0,0,0,0.75);
+	background-color: #3498db;
+	-webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
 }
 
-li.navigation a:link, a:visited {
+li.navigation a {
 	text-align: center;
-    display: block;
-    color: #000;
-    padding: 10px 10px;
-    text-decoration: none;
+	display: block;
+	color: #000;
+	padding: 10px 10px;
+	text-decoration: none;
 }
 
 li.navigation a:target {
-    background-color: #fff;
+	background-color: #fff;
 }
 
 li.navigation a:hover {
-    background-color: #2980b9;
-    color: black;
+	background-color: #2980b9;
+	color: black;
 }
 
 /* formatting of content */
@@ -90,6 +90,8 @@ section h2 {
 }
 
 section {
+	padding-top: 100px;
+	margin-bottom: 100%;
 	margin-left: 20%;
 	margin-right: 20%;
 	padding-left: 50px;
@@ -98,22 +100,36 @@ section {
 	font-size: 28px;
 }
 
+a.anchor {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
+
 /* formatting of footer */
 
 footer {
 	background-color: #34495e;
-    bottom: 0px;
-    left: 0px; 
+	bottom: 0px;
+	left: 0px; 
 	right: 0px;
-	padding: 20px;
+	padding: 10px;
+	position: fixed;
 }
 
 aside {
-    background-color: #3498db;
-    padding: 1em;
-	width: 20%;
+	position: fixed;
+	list-style-type: none;
 	float: right;
-	-webkit-box-shadow: 18px -18px 5px 20px rgba(0,0,0,0.75);
-	-moz-box-shadow: 18px -18px 5px 20px rgba(0,0,0,0.75);
-	box-shadow: 18px -18px 5px 20px rgba(0,0,0,0.75);
+	right: 0px;
+	padding-top: 100px;
+	top: 1em;
+	padding-left: 1em;
+	width: 20%;
+	height: 100%;
+	background-color: #3498db;
+	-webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
 }
