@@ -4,6 +4,7 @@
         <title>Javascript in a Nutshell</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="../css/design.css">
+        <script src="../js/conecalculation.js"></script>
         <meta name="viewport" content="width=device-width" />
     </head>
     <body>
@@ -19,7 +20,52 @@
                 </ul>
             </nav>
             <section>
-                
+                <h1>Javascript explained with an example - cone calculation</h1>
+
+<p>This is a short JavaScript example that does cone calculation.</p>
+
+JavaScript source:
+<p>
+<pre><code>
+function rechne()
+{
+	var zahl = document.getElementById(&quot;zahl&quot;).value;
+	zahl *= 1;
+	var ausgabe = &quot;&quot;;
+	if ( !isNaN( zahl ) ) {
+		ausgabe.innerHTML = &quot;&quot;;
+		for(var i = 2; i &lt;= 9; i++)
+		{
+			ausgabe += &quot;&lt;tr&quot;+((i%2==0)?&quot; bgcolor=#8888ff&quot;:&quot;&quot;)+&quot;&gt;&lt;td align=right&gt;&quot; + zahl + &quot;&lt;/td&gt;&lt;td&gt;* &quot;+i+&quot;&lt;/td&gt;&lt;/tr&gt;&quot;;
+			zahl *= i;
+		}
+		for(var i = 2; i &lt;= 9; i++)
+		{
+			ausgabe += &quot;&lt;tr&quot;+((i%2==0)?&quot; bgcolor=#8888ff&quot;:&quot;&quot;)+&quot;&gt;&lt;td align=right&gt;&quot; + zahl + &quot;&lt;/td&gt;&lt;td&gt;/ &quot;+i+&quot;&lt;/td&gt;&lt;/tr&gt;&quot;;
+			zahl /= i;
+		}
+		ausgabe += &quot;&lt;tr bgcolor=#8888ff&gt;&lt;td align=right&gt;&quot; + zahl + &quot;&lt;/td&gt;&lt;td&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&quot;
+	} else {
+		ausgabe = &quot;Eingabe ung&amp;uuml;ltig&quot;;
+	}
+	document.getElementById(&quot;ausgabe&quot;).innerHTML = ausgabe;
+}
+</code>
+</pre>
+</p>
+
+HTML-source:
+<p>
+<pre><code>
+&lt;p&gt;Type in the start number: &lt;input type=&quot;text&quot; id=&quot;zahl&quot; onkeypress=&quot;rechne()&quot; onkeyup=&quot;rechne()&quot;/&gt;&lt;br&gt;&lt;br&gt;&lt;p&gt;
+&lt;table id=&quot;ausgabe&quot; border=&quot;1px&quot;&gt;&lt;/table&gt;
+</code>
+</pre>
+</p>
+
+
+                <p>Type in the start number: <input type="text" id="zahl" onkeypress="rechne()" onkeyup="rechne()"/><br><br><p>
+                <table id="ausgabe" border="1px"></table>
             </section>
             <aside>
                 <div id="aside-content"></div>
