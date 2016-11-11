@@ -130,6 +130,7 @@ li.navigation a:hover {
 section {
     position: relative;
     margin: 0 22.5%;
+    padding-bottom: 20px;
     /* padding: 100px 0; */
 }
 
@@ -145,6 +146,14 @@ section h2 {
     font-size: 24px;
 }
 
+section ul {
+    list-style: initial;
+    padding-left: 3%;
+}
+
+section ul li {
+    padding-bottom: 1em;
+}
 
 a.anchor {
     display: block;
@@ -218,11 +227,12 @@ aside {
 
     footer > p {
         margin: 0 10%;
-        padding-top: 10px;
+        padding-top: 8px;
     }
 
     section{
         margin: 0 10%;
+        padding-bottom: 10%;
     }
 
     section h1 {
@@ -270,6 +280,7 @@ aside {
     footer > p {
         margin: 0;
         margin-left: 27.5%;
+        padding-top: 8px;
     }
 
     aside {
