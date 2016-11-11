@@ -71,6 +71,20 @@ header img {
     height: 1em;
 }
 
+header a {
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #3498db;
+}
+
+header a:visited {
+    color: #3498db;
+}
+
+
+
 /* navigation part */
 
 nav {
@@ -130,6 +144,7 @@ section h1 {
 section h2 {
     font-size: 24px;
 }
+
 
 a.anchor {
     display: block;
