@@ -20,7 +20,47 @@
                 </ul>
             </nav>
             <section>
-                
+                <h1>How does the Javascript Syntax work?</h1>
+<h2>Case sensitivity</h2>
+<p>JavaScript is case sensitive. That means that the variable names "house" and "House" are different and can be used as two seperate variables.</p>
+<h2>Whitespace and semicolons</h2>
+JavaScript uses semicolons (<code>;</code>) to mark the end of a line of code. However, some interpreters do not need this at every end of line. For instance if the last line in a code block is a return statement, it will be executed even without a semicolon:
+<p>
+  <pre>
+    function x() {
+      a = 1;
+      return a // no ";" needed
+    }</pre>
+</p>
+<h2>Comments</h2>
+<p>The syntax for comments in JavaScript is the same as in C/C++. Single line comments can be made by inserting two slashes (<code>//</code>) and everything that comes after this in the same line will be interpreted as a comment.</p>
+<p>Multiline comments can be made by putting <code>/*</code> before and <code>*/</code> after the comment. This can also be used to only comment out parts of a line.
+<h2>JavaScript Literals</h2>
+Numbers can be written either with or without a decimal point:
+<p>
+  <pre>
+    num1 = 3.50
+    num2 = 101</pre>
+</p>
+Strings can be written by using single or double quotes:
+<p>
+  <pre>
+    str1 = "Test"
+    str2 = 'Test'</pre>
+</p> 
+<h2>JavaScript Operators</h2>
+JavaScript uses the equal sign (<code>=</code>) an assignment operator:
+<p>
+  <pre>
+    var x = 5;
+    var y = 6;</pre>
+</p> 
+
+JavaScript uses the standard arithmetic operators ( <code>+ - *  /</code> ) and brackets <code>(</code><code>)</code> to express calculations:
+<p>
+  <pre>
+    (1 + 2) * 3</pre>
+</p>
             </section>
             <aside>
                 <div id="aside-content"></div>
