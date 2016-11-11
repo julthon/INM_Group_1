@@ -203,6 +203,11 @@ aside {
     padding-top: 15px;
 }
 
+code {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
 @media (max-width: 500px) {
     header {
         font-size: 14pt;
@@ -238,7 +243,6 @@ aside {
         padding-top: 10px;
         display: block;
     }
-
 
     footer{
         position: relative;
